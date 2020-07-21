@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeraSenha!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container" style="background-color:gainsboro;border-radius:10px;padding:20px;">
+      <h1 class="title">
+        Gerador de senha
+      </h1>
+      <p class="subtitle">
+        Um simples gerador de senha em <strong>Electron</strong>
+      </p>
+      <div class="field">
+        <label class="label">Qual o tamanho da senha?</label>
+          <div class="control">
+            <input class="input" type="number" id="pass" min="0" max="30">
+         </div>
+       </div>
+       <div class="field">
+         <button onclick="generatePass()" class="button is-info">Gerar senha</button>
+       </div>
+       <div class="field">
+         <label class="label">Senha gerada</label>
+         <strong style="background-color: white;border-radius: 5px;padding:10px;font-size: 1.2em;"><span id="newPassword"></span></strong>
+       </div>
+    </div>
+  </section>
+  </body>
+  <script src="./src/myscript.js"></script>
+</html>
